@@ -1,30 +1,45 @@
 # Contributing to OpenBikeRadar
 
-This is an open source project. Contributions are welcome.
+Thanks for being here. This project is for everyone — beginners included.
 
-## Ways to contribute
+---
 
-- **Build it and report back** — try the build guide, open an issue with what broke
-- **Improve the firmware** — better filtering, detection logic, power management
-- **Better enclosure** — improved CAD files for the case
-- **Documentation** — clearer wiring guides, photos, translations
+## You don't need to know how to code to contribute
 
-## How to submit changes
+Here are ways anyone can help:
 
-1. Fork the repo
-2. Create a branch: `git checkout -b your-feature`
-3. Commit your changes
-4. Open a pull request — describe what you changed and why
+- **Build it and tell us what broke** — open an issue describing what went wrong, what you expected, and what happened instead. That's genuinely useful.
+- **Improve the build guide** — if a step was confusing, suggest how to make it clearer
+- **Share photos** — built one? Post it in the issues, we'd love to see it
+- **Translate** — make the guide available in another language
+- **Test with different hardware** — tried a different sensor or display? Report what worked
 
-## What we care about
+---
 
-- Keep it buildable by someone with basic electronics experience
-- Keep costs low (target: under 600 SEK / 55 EUR for full build)
-- Keep it open — no proprietary dependencies
+## If you want to contribute code
 
-## Issues
+1. Click "Fork" at the top right of this page — this gives you your own copy
+2. Make your change in your copy
+3. Click "Pull request" to suggest your change to this project
+4. Describe what you changed and why
 
-Open an issue if:
-- Something in the build guide is wrong or unclear
-- The firmware doesn't work with your hardware version
-- You have a sensor or component recommendation
+That's it. No experience needed — first contributions are welcome.
+
+---
+
+## Opening an issue
+
+Go to the **Issues** tab and click **New issue**.
+
+Good issues include:
+- What you were trying to do
+- What happened instead
+- What hardware you have (which ESP32, which sensor version)
+
+---
+
+## What this project cares about
+
+- **Stays buildable by a beginner** — if it gets too complicated, that's a bug
+- **Stays cheap** — target is under 600 SEK / 55 EUR for a full build
+- **Stays open** — no paid tools, no proprietary dependencies

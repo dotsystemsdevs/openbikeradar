@@ -1,67 +1,89 @@
 # OpenBikeRadar
 
+![OpenBikeRadar](assets/logo.png)
+
 An open source bike radar you can build yourself — a DIY alternative to the Garmin Varia.
+
+No advanced electronics experience needed. If you can follow a wiring diagram and copy-paste code, you can build this.
+
+---
 
 ## What it does
 
-- Detects objects behind your bike using mmWave radar
-- Estimates distance
-- Determines if something is approaching
-- Displays status on a small screen
-- Alerts you with sound or vibration
+- Detects vehicles or objects behind your bike using a small radar sensor
+- Shows you how far away they are
+- Warns you if something is getting closer
+- Displays status on a tiny screen
+- Beeps or vibrates when something is too close
 
-## Hardware
+## What it costs
 
-| Part | Notes |
-|------|-------|
-| ESP32 DevKit (WROOM) | Main microcontroller |
-| LD2410 mmWave radar sensor | Core detection |
-| OLED 0.96" I2C (SSD1306) | Display |
-| Buzzer | Alert |
-| 18650 battery + TP4056 charger | Power (~15h runtime) |
+Around **400–600 SEK / 35–55 EUR** in parts. Compare that to ~2000 SEK for a Garmin Varia.
 
-Total cost: ~400–600 SEK / ~35–55 EUR
+---
 
-## System architecture
+## Parts you need
+
+You don't need to understand all of these yet — just order them and we'll explain each one as we use it.
+
+| Part | What it does |
+|------|-------------|
+| ESP32 (the brain) | A small computer that runs your code |
+| LD2410 radar sensor | Detects movement behind you |
+| OLED screen (0.96") | Shows distance and status |
+| Buzzer | Makes a sound when something is close |
+| 18650 battery + charger | Powers the whole thing for ~15 hours |
+| Breadboard + cables | Connects everything together for testing |
+
+Full list with quantities: [hardware/bom.md](hardware/bom.md)
+
+---
+
+## How it works (simple version)
 
 ```
-[ LD2410 sensor ]
-        ↓
-      ESP32
-    ↙       ↘
- OLED      Buzzer
+Radar sensor → sees something behind you
+      ↓
+   ESP32 → figures out how close it is
+      ↓
+  Screen → shows you the distance
+  Buzzer → beeps if it's too close
 ```
 
-## Repository structure
+---
 
-```
-openbikeradar/
-├── firmware/        # ESP32 code
-│   └── src/
-├── hardware/        # Wiring diagrams and BOM
-│   └── wiring/
-├── cad/             # 3D print files for enclosure
-└── docs/            # Build guides and documentation
-```
+## How to build it
 
-## Status
+Follow the step-by-step guide: [docs/build-guide.md](docs/build-guide.md)
 
-**V1 — In progress (proof of concept)**
+You don't need to read everything at once — just start at Step 1.
 
-- [ ] Sensor reading
-- [ ] Detection logic
+---
+
+## Project status
+
+**V1 — In progress**
+
+- [ ] Sensor reading works
+- [ ] Detection logic done
 - [ ] Risk levels (LOW / MED / HIGH)
-- [ ] Display output
-- [ ] Alert system
-- [ ] Field tested
+- [ ] Screen showing status
+- [ ] Alert system working
+- [ ] Tested on a real bike
 
-## Build guide
+---
 
-See [docs/build-guide.md](docs/build-guide.md)
+## Why open source?
+
+The Garmin Varia does basically the same thing and costs ~2000 SEK. It's also a closed system — you can't modify it, fix it, or understand how it works.
+
+This project is fully open. Build it, change it, improve it.
+
+---
 
 ## License
 
-MIT — build it, modify it, share it.
+MIT — do whatever you want with it.
 
 ## Contributing
 
