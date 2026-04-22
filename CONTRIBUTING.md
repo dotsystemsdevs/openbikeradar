@@ -41,5 +41,5 @@ Good issues include:
 ## What this project cares about
 
 - **Stays buildable by a beginner** — if it gets too complicated, that's a bug
-- **Stays cheap** — target is under 600 SEK / 55 EUR for a full build
+- **Stays cheap** — target is under 55 EUR for a full build
 - **Stays open** — no paid tools, no proprietary dependencies

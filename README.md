@@ -18,7 +18,7 @@ No advanced electronics experience needed. If you can follow a wiring diagram an
 
 ## What it costs
 
-Around **400–600 SEK / 35–55 EUR** in parts. Compare that to ~2000 SEK for a Garmin Varia.
+Around **35–55 EUR** in parts. Compare that to ~180 EUR for a Garmin Varia.
 
 ---
 
