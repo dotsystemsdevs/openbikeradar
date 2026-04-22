@@ -1,6 +1,6 @@
 # OpenBikeRadar
 
-![OpenBikeRadar](assets/logo.png)
+<img src="assets/logo.png" width="200" />
 
 An open source bike radar you can build yourself — a DIY alternative to the Garmin Varia.
 
